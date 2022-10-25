@@ -1,4 +1,4 @@
-package fr.vde.persist.entities;
+package fr.vde.domaine.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -28,14 +28,12 @@ private String dateInscription;
 
 
 
-public long getId()   
-{    
-return id;    
-}    
-public void setId(long id)   
-{    
-this.id = id;
-
+	public long getId() {    
+		return id;    
+	}    
+	public void setId(long id) {    
+		this.id = id;
+	}
 
 public String getNom()   
 {    
@@ -58,10 +56,10 @@ public int getAge()
 {    
 return age;    
 }    
-public void setAge(long age)   
+public void setAge(int age)   
 {    
 this.age = age;
-
+}
 
 public String getDateInscription()   
 {    
@@ -70,7 +68,7 @@ return dateInscription;
 public void setDateInscription(String dateInscription)   
 {    
 this.dateInscription= dateInscription; 
-
+}
 
 
 

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import fr.vde.persist.dao.RepositoryKoj;
 import org.springframework.beans.factory.annotation.Autowired;
-import fr.vde.persist.entities.koj;
+import fr.vde.domaine.entities.koj;
 
 import java.util.List;
 

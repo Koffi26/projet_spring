@@ -1,4 +1,4 @@
-package fr.vde.persist.entities;
+package fr.vde.domaine.entities;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

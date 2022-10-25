@@ -2,7 +2,7 @@ package fr.vde.persist.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import fr.vde.persist.entities.koj;
+import fr.vde.domaine.entities.koj;
 import java.util.List;
 
 
