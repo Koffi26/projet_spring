@@ -42,9 +42,9 @@ public class ServiceImpl implements Iservice {
 	}
 	
 	@Override
-	public void supEtudiant(Etudiant e) {
+	public void supEtudiant(long id) {
 		List<Long> list = new ArrayList<Long>();
-		list.add(e.getId());
+		list.add(id);
 		repo.deleteAllByIdInBatch(list);
 	}
 	

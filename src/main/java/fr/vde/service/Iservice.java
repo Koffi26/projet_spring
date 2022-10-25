@@ -13,6 +13,6 @@ public interface Iservice {
 	
 	public void majEtudiant(Etudiant e);
 	
-	public void supEtudiant(Etudiant e);
+	public void supEtudiant(long id);
 	
 }
