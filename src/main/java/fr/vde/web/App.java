@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 
 @EnableJpaRepositories("fr.vde.persist.dao")
-@EntityScan("fr.vde.persist.entities")
+@EntityScan("fr.vde.domaine.entities")
 @ComponentScan({"fr.vde.*"})
 @SpringBootApplication
 public class App {

@@ -1,5 +1,7 @@
 package fr.vde.web.controler;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,6 +16,8 @@ import java.util.List;
 @RestController
 @RequestMapping(value = "/koff")
 public class MonControler {
+	
+	private static final Logger logger = LoggerFactory.getLogger(MonControler.class);
 
 	@Autowired
 	private RepositoryKoj repositoryKoj;
@@ -21,6 +25,9 @@ public class MonControler {
 
 	@RequestMapping(value = "/test", method = RequestMethod.GET, produces="application/json")
 	public String[] test() {
+		
+		logger.info("log");
+		
 		String[] str = {"juste","un","test"};
 		
 		koj k = new koj();
