@@ -28,6 +28,13 @@ public class ControlerEtudiant {
 	@Autowired
 	private ServiceImpl service ;
 	
+	
+	@GetMapping("/studentTst")
+	public String[] testws() {
+		String[] str = {"juste","un","test"};
+		return str;
+	}
+
 	@GetMapping("/student/{id}")
 	public Etudiant getStudentById(@PathVariable long id) {
 		logger.info("uri: /student/"+id);
